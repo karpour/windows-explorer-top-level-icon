@@ -52,3 +52,4 @@ When creating a new entry, it is recommended to provide a GUID. If you don't pro
 
 This tool creates a new class in `HKCU:\Software\Classes\CLSID\` and populates it with the required keys for name, path, type, icon, attributes, etc. (`HKCU:\Software\Classes\Wow6432Node\CLSID\` for 32-bit compatibility is omitted. If someone needs this, please submit a PR) 
 
+It also an entry in `HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel\` to hide the icon from the desktop, as well as in `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\` to register the class.
